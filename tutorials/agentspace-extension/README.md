@@ -12,6 +12,8 @@ You can checkout other examples in this [MCP servers repository][mcp-servers]. M
 ## Prerequisites
 This guide sets up a basic Agentspace instance with a dataset, make sure you have followed the steps here to configure your Agentspace demo instance: [Get started with Agentspace Enterprise](https://cloud.google.com/agentspace/agentspace-enterprise/docs/quickstart-agentspace)
 
+You can also test your Agentspace instance with this sample to make sure it's setup properly: [intro_agentspace.ipynb](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/search/agentspace/intro_agentspace.ipynb)
+
 ## Step 1: Initialize Your Project
 
 The first step is to create a new project using [uv][uv-docs]. We will name our project `mcp-agentspace`.
