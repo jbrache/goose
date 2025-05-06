@@ -22,7 +22,7 @@ Run the following commands in your terminal to set up a basic structure for your
 uv init mcp-agentspace
 
 cd mcp-agentspace
-rm hello.py
+rm main.py
 
 mkdir -p src/mcp_agentspace
 touch src/mcp_agentspace/server.py  # Your MCP server code (tool, resources, prompts)
