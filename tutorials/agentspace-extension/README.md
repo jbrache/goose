@@ -1,7 +1,7 @@
 # Building Custom Agentspace Extensions with Goose
 
 
-Goose allows you to extend its functionality by creating your own custom extensions, which are built as MCP servers. These extensions are compatible with Goose because it adheres to the [Model Context Protocol (MCP)][mcp-docs]. MCP is an open protocol that standardizes how applications provide context to LLMs. It enables a consistent way to connect LLMs to various data sources and tools, making it ideal for extending functionality in a structured and interoperable way. 
+[Goose](https://block.github.io/goose/docs/quickstart) allows you to extend its functionality by creating your own [custom extensions](https://block.github.io/goose/docs/tutorials/custom-extensions/), which are built as MCP servers. These extensions are compatible with Goose because it adheres to the [Model Context Protocol (MCP)][mcp-docs]. MCP is an open protocol that standardizes how applications provide context to LLMs. It enables a consistent way to connect LLMs to various data sources and tools, making it ideal for extending functionality in a structured and interoperable way. 
 
 In this guide, we build an MCP server using the [Python SDK for MCP][mcp-python]. We’ll demonstrate how to create an MCP server that leverages [Google Cloud Agentspace](https://cloud.google.com/agentspace/agentspace-enterprise/docs/overview) for search and assistance, integrate it as an extension in Goose.
 
