@@ -141,7 +141,7 @@ build-backend = "hatchling.build"
 5. In the UI, you can click "Connect" to initialize your MCP server. Then click on "Tools" tab > "List Tools" and you should see the `get_search_response` tool. 
    Then you can try to call the `get_search_response` tool with Query set to "Who founded Cymbal Bank?" and click "Run Tool". 
 
-![MCP Inspector UI](../assets/guides/custom-extension-mcp-inspector.png)
+![MCP Inspector UI](assets/images/agentspace-mcp-inspector.png)
 
 ### Testing the CLI
 
@@ -197,7 +197,7 @@ uvx mcp-agentspace
 
 For the purposes on this guide, we will show you how to run the local version. 
 
-![Goose Settings for Adding Custom Extension](../assets/guides/custom-extension-settings.png)
+![Goose Settings for Adding Custom Extension](assets/images/agentspace-extension-settings.png)
 
 ---
 
@@ -207,11 +207,11 @@ Once integrated, you can start using your extension in Goose. Open the Goose cha
 
 You can verify that Goose has picked up the tools from your custom extension by asking it "what tools do you have?"
 
-![Goose Chat - Ask about tools](../assets/guides/custom-extension-tools.png)
+![Goose Chat - Ask about tools](assets/images/agentspace-extension-tools.png)
 
 Then, you can try asking questions that require using the extension you added.
 
-![Goose Chat - Use custom extension](../assets/guides/custom-extension-chat.png)
+![Goose Chat - Use custom extension](assets/images/agentspace-extension-chat.png)
 
 🎉 **Congratulations!** You’ve successfully built and integrated a custom MCP server with Goose.
 
