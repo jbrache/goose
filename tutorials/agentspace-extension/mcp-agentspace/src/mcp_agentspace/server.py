@@ -1,7 +1,17 @@
-# import requests
-# from requests.exceptions import RequestException
-# from bs4 import BeautifulSoup
-# from html2text import html2text
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
 import requests
 import json
@@ -27,50 +37,6 @@ def get_auth_header():
       'Content-Type': 'application/json; charset=UTF-8'
   }
   return headers
-
-# @mcp.tool()
-# def read_wikipedia_article(url: str) -> str:
-#     """
-#     Fetch a Wikipedia article at the provided URL, parse its main content,
-#     convert it to Markdown, and return the resulting text.
-
-#     Usage:
-#         read_wikipedia_article("https://en.wikipedia.org/wiki/Python_(programming_language)")
-#     """
-#     try:
-#         # Validate input
-#         if not url.startswith("http"):
-#             raise ValueError("URL must start with http or https.")
-
-#         response = requests.get(url, timeout=10)
-#         if response.status_code != 200:
-#             raise McpError(
-#                 ErrorData(
-#                     INTERNAL_ERROR,
-#                     f"Failed to retrieve the article. HTTP status code: {response.status_code}"
-#                 )
-#             )
-
-#         soup = BeautifulSoup(response.text, "html.parser")
-#         content_div = soup.find("div", {"id": "mw-content-text"})
-#         if not content_div:
-#             raise McpError(
-#                 ErrorData(
-#                     INVALID_PARAMS,
-#                     "Could not find the main content on the provided Wikipedia URL."
-#                 )
-#             )
-
-#         # Convert to Markdown
-#         markdown_text = html2text(str(content_div))
-#         return markdown_text
-
-#     except ValueError as e:
-#         raise McpError(ErrorData(INVALID_PARAMS, str(e))) from e
-#     except RequestException as e:
-#         raise McpError(ErrorData(INTERNAL_ERROR, f"Request error: {str(e)}")) from e
-#     except Exception as e:
-#         raise McpError(ErrorData(INTERNAL_ERROR, f"Unexpected error: {str(e)}")) from e
 
 @mcp.tool()
 def get_search_response(
